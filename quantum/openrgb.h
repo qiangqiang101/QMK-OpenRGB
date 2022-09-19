@@ -1,4 +1,5 @@
 /* Copyright 2020 Kasper
+ * Copyright 2022 HorrorTroll
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,7 +19,7 @@
 
 // This is changed only when the command IDs change,
 // so OpenRGB can detect compatible firmware.
-#define OPENRGB_PROTOCOL_VERSION 0xD
+#define OPENRGB_PROTOCOL_VERSION 0xE
 
 #define RAW_EPSIZE 64
 
