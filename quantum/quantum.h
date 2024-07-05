@@ -218,6 +218,12 @@ extern layer_state_t layer_state;
 #    include "openrgb.h"
 #endif
 
+#ifdef SIGNALRGB_SUPPORT_ENABLE
+#    ifndef VIA_ENABLE
+#    include "signalrgb.h"
+#    endif
+#endif
+
 #ifdef WPM_ENABLE
 #    include "wpm.h"
 #endif

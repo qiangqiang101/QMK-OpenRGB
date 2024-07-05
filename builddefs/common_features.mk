@@ -623,6 +623,14 @@ ifeq ($(strip $(OPENRGB_ENABLE)), yes)
     OPT_DEFS += -DOPENRGB_ENABLE
 endif
 
+ifeq ($(strip $(SIGNALRGB_SUPPORT_ENABLE)), yes)
+    ifneq ($(strip $(VIA_ENABLE)), yes)
+    RAW_ENABLE := yes
+    SRC += $(QUANTUM_DIR)/signalrgb.c
+    OPT_DEFS += -DSIGNALRGB_SUPPORT_ENABLE
+    endif
+endif
+
 VALID_MAGIC_TYPES := yes
 BOOTMAGIC_ENABLE ?= no
 ifneq ($(strip $(BOOTMAGIC_ENABLE)), no)
